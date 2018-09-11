@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/sample_text"
+    <ImageView
+        android:id="@+id/imaveview_palavras"
         android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/palavras"
+        />
+
+    <EditText
+        android:id="@+id/edittext_palavra1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Digite uma palavra"
+        android:layout_marginTop="48dp"/>
+
+    <EditText
+        android:id="@+id/edittext_palavra2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="Digite uma palavra"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btn_concatenar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Concatenar"
+        android:layout_marginTop="48dp"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:backgroundTint="#448AFF"
+        android:textColorHint="#ffffff"/>
 
 
 
-</android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
