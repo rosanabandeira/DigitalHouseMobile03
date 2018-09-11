@@ -1,16 +1,13 @@
-package br.com.digitalhouse.app;
+package br.com.digitalhouse.tafefa_aula17;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LoginActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
-
-
+        setContentView(R.layout.activity_main2);
     }
 }
