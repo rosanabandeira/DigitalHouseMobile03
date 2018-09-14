@@ -4,36 +4,237 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".CalculadoraActivity">
 
-
-
-
-       <Button
+    <TextView
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
-
-    <Button
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#F57C00"/>
+        android:text="0"
+        android:textSize="40dp"
+        android:textColor="#FFFF"
+        android:background="#212121"
+        android:paddingRight="16dp"
+        android:gravity="center|right" />
 
+    <LinearLayout
 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BDBDBD"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_c"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="calculate"
+            android:text="C"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_soma_subtracao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="+/-"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_porcentagem"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="%"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_divisao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F57C00"
+            android:text="÷"
+            android:textColor="#F5F5F5"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BDBDBD"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_sete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_oito"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_nove"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_multiplicacao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F57C00"
+            android:text="X"
+            android:textColor="#F5F5F5"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BDBDBD"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_quatro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_cinco"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_seis"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_subtracao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F57C00"
+            android:text="-"
+            android:textColor="#F5F5F5"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BDBDBD"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_um"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_dois"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_tres"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_soma"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F57C00"
+            android:text="+"
+            android:textColor="#F5F5F5"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#BDBDBD"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="0"
+            android:gravity="left|center"
+            android:textSize="25sp"
+            android:paddingStart="16dp"/>
+
+        <Button
+            android:id="@+id/btn_ponto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="."
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAlignment="gravity"/>
+
+        <Button
+            android:id="@+id/btn_igual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#F57C00"
+            android:text="="
+            android:textColor="#F5F5F5"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
